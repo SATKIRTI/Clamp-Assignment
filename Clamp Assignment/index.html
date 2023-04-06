@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clamp Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 class="text1">Hira R.</h1>
+        <h1 class="text2">UX/UI Designer</h1>
+        <h1 class="text3">125</h1>
+        <h1 class="text4">$124</h1>
+        <h1 class="text5">Projects</h1>
+        <h1 class="text6">Revenue</h1>
+      </div>
+      <div class="box1">
+        <img class="img1" src="revenue2.png" alt="" />
+        <h1 class="t1">Total Revenue</h1>
+        <h1 class="t2">$92,983</h1>
+        <div class="row">
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <img class="img2" src="client.png" alt="" />
+        <i class="fa fa-caret-down"></i>
+        <h1 class="t3">Dear Client</h1>
+        <h3 class="t4">
+          Join our online community. It helps in managing your projects.
+        </h3>
+        <p><i class="arrow down"></i></p>
+      </div>
+      <div class="box3">
+        <img class="img3" src="dashboard.png" alt="" />
+        <h1 class="t5">Dashboard</h1>
+        <img class="img4" src="email-icon.webp" alt="" />
+        <h1 class="t6">Email</h1>
+        <img class="img5" src="calendar.jpg" alt="" />
+        <h1 class="t7">Calender</h1>
+        <img class="img6" src="graph.webp" alt="" />
+        <h1 class="t8">Graph</h1>
+        <img class="img7" src="form.webp" alt="" />
+        <h1 class="t9">Forms</h1>
+      </div>
+      <div class="box4">
+        <h1 class="text7">Go Pro</h1>
+        <h1 class="text8">Upgrade your plan to get pro benefits</h1>
+        <h1 class="text18">Let's Start</h1>
+      </div>
+      <div class="box5">
+        <h1 class="text9">Travel</h1>
+        <h1 class="t10">Mobile Application</h1>
+        <h1 class="t11">Seen by</h1>
+        <img class="a" src="tran.png" alt="" />
+        <img class="b" src="tran.png" alt="" />
+        <img class="c" src="tran.png" alt="" />
+        <h1 class="t12">Tour</h1>
+        <h1 class="t13">Trip</h1>
+        <h1 class="t14">Transport</h1>
+      </div>
+      <div class="box6">
+        <h1 class="text15">Hotel</h1>
+        <h1 class="text16">Dashboard</h1>
+        <h1 class="text17">Seen by</h1>
+        <img class="d" src="tran.png" alt="" />
+        <img class="e" src="tran.png" alt="" />
+        <img class="f" src="tran.png" alt="" />
+        <h1 class="t15">Tour</h1>
+        <h1 class="t16">Trip</h1>
+        <h1 class="t17">Transport</h1>
+      </div>
+      <div class="box7">
+        <h1 class="text10">Free Slots Available</h1>
+        <div class="slot1">
+          <h1 class="one">12</h1>
+          <h1 class="two">June</h1>
+        </div>
+        <div class="slot2">
+          <h1 class="three">02</h1>
+          <h1 class="four">July</h1>
+        </div>
+        <div class="slot3">
+          <h1 class="five">18</h1>
+          <h1 class="six">June</h1>
+        </div>
+        <div class="slot4">
+          <h1 class="seven">20</h1>
+          <h1 class="eight">June</h1>
+        </div>
+        <div class="slot5">
+          <h1 class="nine">10</h1>
+          <h1 class="ten">July</h1>
+        </div>
+        <div class="slot6">
+          <h1 class="eleven">15</h1>
+          <h1 class="twelve">July</h1>
+        </div>
+        <div class="dropdown">
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box8">
+        <img class="tran" src="tran.png" alt="" />
+        <h1 class="text11">Transaction Details</h1>
+        <h1 class="tb4">Hi Hira</h1>
+        <h1 class="tb5">$4,358.40</h1>
+        <h1 class="tb6">Available Balance</h1>
+        <h1 class="tb7">****3582</h1>
+        <button class="clic" onclick="myFunction()">-></button>
+
+        <div id="myDIV">
+          <img class="g" src="tran.png" alt="" />
+          <img class="h" src="tran1.png" alt="" />
+          <img class="i" src="tran.png" alt="" />
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+        </script>
+        <h1 class="tb8">Send</h1>
+      </div>
+      <div class="box9">
+        <h1 class="text12">Project Details</h1>
+        <h1 class="tb1">Hira R.</h1>
+        <h1 class="tb2">UX/UI Designer</h1>
+        <h1 class="tb3">Projects Progress</h1>
+        <div class="animated-progress progress-blue">
+          <span data-progress="75"></span>
+        </div>
+        <script>
+          const animated = document.querySelector(".animated");
+          let count = 0;
+          setInterval(() => {
+            if (count == 75) {
+              clearInterval();
+            } else {
+              count += 1;
+              numb.textContent = count + "%";
+            }
+          }, 75);
+        </script>
+      </div>
+      <div class="box10">
+        <h1 class="text13">Projects Progress</h1>
+        <h1 class="text14">3 Remaining Projects</h1>
+        <div class="circular">
+          <div class="inner"></div>
+          <div class="outer"></div>
+          <div class="numb">0%</div>
+          <div class="circle">
+            <div class="dot">
+              <span></span>
+            </div>
+            <div class="bar left">
+              <div class="progress"></div>
+            </div>
+            <div class="bar right">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const numb = document.querySelector(".numb");
+          let counter = 0;
+          setInterval(() => {
+            if (counter == 100) {
+              clearInterval();
+            } else {
+              counter += 1;
+              numb.textContent = counter + "%";
+            }
+          }, 75);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
